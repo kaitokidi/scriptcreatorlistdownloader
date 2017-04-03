@@ -20,3 +20,5 @@ fi
 
 
 will need youtube-dl nd python 3
+
+Also used this http://pantuts.com/2013/02/16/youparse-extract-urls-from-youtube/ so the due creddits and liscense
