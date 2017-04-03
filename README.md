@@ -9,3 +9,6 @@ then
     echo " "
     echo " Without parameters it will just generate the scripts."
 fi
+
+
+will need youtube-dl nd python 3
