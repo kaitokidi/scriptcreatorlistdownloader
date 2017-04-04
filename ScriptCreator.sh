@@ -109,7 +109,7 @@ echo -e "
 int main(){
 
     std::string link;
-    std::string command = \"./downloadYoutubeSong.sh \";
+    std::string command = \"./$YOUTUBEDOWNLOADER \";
     int i = 0;
     std::cin >> link;
     while(i < $AMOUNT && link != \"END\")
