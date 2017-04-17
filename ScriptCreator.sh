@@ -11,13 +11,6 @@ then
     exit 0
 fi
 
-if [ "$1" == "clean" ] || [ "$1" == "clear" ]
-then
-    echo " ------let me just $1 this mess-------"
-    rm $GETLINKS $DOWNLOADLAUNCHER $DOWNLOADLAUNCHER.cpp $DOWNLOADLAUNCHER.o $YOUTUBEDOWNLOADER $FILENAME
-    exit 0
-fi
-
 AMOUNT=$2
 if [ -z $2 ]
 then
@@ -34,6 +27,12 @@ GETLINKS="auto_script.py"
 DOWNLOADLAUNCHER="auto_downloadLauncher"
 YOUTUBEDOWNLOADER="auto_downloadYoutubeSong.sh"
 
+if [ "$1" == "clean" ] || [ "$1" == "clear" ]
+then
+    echo " ------let me just $1 this mess-------"
+    rm $GETLINKS $DOWNLOADLAUNCHER $DOWNLOADLAUNCHER.cpp $DOWNLOADLAUNCHER.o $YOUTUBEDOWNLOADER $FILENAME
+    exit 0
+fi
 echo " ------------------------------"
 
 echo " :O)0>  $GETLINKS  "
