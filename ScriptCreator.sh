@@ -194,7 +194,7 @@ fi
 echo "END" >> $FILENAME
 echo " ------------------------------"
 
-./downloadLauncher < $FILENAME
+./DOWNLOADLAUNCHER < $FILENAME
 
 echo " ------------------------------"
 
