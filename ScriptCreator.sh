@@ -8,6 +8,14 @@ then
     echo " the minimum from the amountOfSongs and the amount of songs on the list."
     echo " "
     echo " Without parameters it will just generate the scripts."
+    exit 0
+fi
+
+if [ "$1" == "clean" ] || [ "$1" == "clear" ]
+then
+    echo " ------let me just $1 this mess-------"
+    rm $GETLINKS $DOWNLOADLAUNCHER $DOWNLOADLAUNCHER.cpp $DOWNLOADLAUNCHER.o $YOUTUBEDOWNLOADER $FILENAME
+    exit 0
 fi
 
 AMOUNT=$2
@@ -202,12 +210,6 @@ echo " "
 echo " "
 
 echo " -----this should be done--------"
-
-if [ "$1" == "clean" ] || [ "$1" == "clear" ]
-then
-    echo " ------let me just $1 this mess-------"
-    rm $GETLINKS $DOWNLOADLAUNCHER $DOWNLOADLAUNCHER.cpp $DOWNLOADLAUNCHER.o $YOUTUBEDOWNLOADER $FILENAME
-fi
 
 echo "Have an  amazing day : ) "
 echo "  //*//  "
