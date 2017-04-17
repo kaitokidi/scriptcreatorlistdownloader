@@ -116,7 +116,7 @@ echo -e "
 int main(){
 
     std::string link;
-    std::string command = \"./$YOUTUBEDOWNLOADER \";
+    std::string command = \"bash $YOUTUBEDOWNLOADER \";
     int i = 0;
     std::cin >> link;
     while(i < $AMOUNT && link != \"END\")
